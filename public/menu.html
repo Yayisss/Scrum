@@ -1,12 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.50.0/dist/full.css" rel="stylesheet" type="text/css" />
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2/dist/tailwind.min.css" rel="stylesheet" type="text/css" />
+
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>menu</title>
+    <title>SafeMe</title>
+    <link rel="icon" href="../images/1.png">
+    <link rel="stylesheet" href="css/bitacora.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <script src="https://kit.fontawesome.com/92927bfbd1.js" crossorigin="anonymous"></script>
 </head>
-<body>
-    <h6>hello world</h6>
+
+<body id="body">
+    <header>
+        <div class="icon__menu">
+            <i class="fa-solid fa-bars" id="btn_open"></i>
+        </div>
+
+        <div class="text-sm breadcrumbs">
+            <ul>
+              <li>
+                <a>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="w-4 h-4 mr-2 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"></path></svg>
+                  Home
+                </a>
+              </li> 
+              <li>
+                <a>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="w-4 h-4 mr-2 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"></path></svg>
+                  Documents
+                </a>
+              </li> 
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="w-4 h-4 mr-2 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 13h6m-3-3v6m5 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                Add Document
+              </li>
+            </ul>
+          </div>
+        
+    </header>
+
+    <div class="menu__side" id="menu_side">
+
+        <div class="options__menu">
+
+            <a href="../Amenu.php"  title="Home">
+                <div class="option">
+                    <i class="fa-solid fa-house"></i>
+                    <h4>Home</h4>
+                </div>
+            </a>
+
+            <a href="bitacora.php" title="Log">
+                <div class="option">
+                    <i class="fa-regular fa-calendar-days"></i>
+                    <h4>Log</h4>
+                </div>
+            </a>
+
+            <a href="Clinea de ayuda.php" title="Helpline">
+                <div class="option">
+                    <i class="fa-solid fa-hand-holding-medical"></i>
+                    <h4>Helpline</h4>
+                </div>
+            </a>
+
+            <a href="Acrisis.php" title="Crisis">
+                <div class="option">
+                    <i class="fa-solid fa-heart-circle-exclamation"></i>
+                    <h4>Crisis</h4>
+                </div>
+            </a>
+            <a href="Bperfil.php?id=<?php echo $user_id?>" title="Profile">
+                <div class="option">
+                    <i class="fa-solid fa-user-gear"></i>
+                    <h4>Profile</h4>
+                </div>
+            </a>
+
+            <a href="Bconfiguracion.php" class="selected" title="Customer Service">
+                <div class="option">
+                    <i class="fa-solid fa-gear"></i>
+                    <h4>Customer Service</h4>
+                </div>
+            </a>
+          
+            <a href="salir.php">
+                <div class="option">
+                    <i class="fa-solid fa-power-off"></i>
+                </div>
+            </a>
+        </div>
+
+    </div>
+
+
+    <script src="js/boton.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
 </body>
-</html>
